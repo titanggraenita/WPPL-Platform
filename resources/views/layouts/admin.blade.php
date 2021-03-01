@@ -17,6 +17,9 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/dropzone.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/template.css') }}" rel="stylesheet">
     <link href="{{ asset('css/sb-admin-2.min.css') }}" rel="stylesheet">
 
     <!-- Favicon -->
@@ -29,14 +32,14 @@
 <!-- Page Wrapper -->
 <div id="wrapper">
     <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    <ul class="navbar-nav bg-new-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
         <!-- Sidebar - Brand -->
         <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('home') }}">
             <div class="sidebar-brand-icon rotate-n-15">
                 <i class="fas fa-laugh-wink"></i>
             </div>
-            <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+            <div class="sidebar-brand-text mx-3">WPPL Platform</div>
         </a>
 
         <!-- Divider -->
@@ -49,6 +52,46 @@
                 <span>{{ __('Dashboard') }}</span></a>
         </li>
 
+        <!-- Nav Item -->
+        <li class="nav-item {{ Nav::isRoute('business-model') }}">
+            <a class="nav-link" href="{{ route('business-model') }}">
+                <i class="fas fa-fw fa-file-alt"></i>
+                <span>{{ __('Business Model') }}</span>
+            </a>
+        </li>
+
+        <!-- Nav Item -->
+        <li class="nav-item {{ Nav::isRoute('assignment') }}">
+            <a class="nav-link" href="{{ route('assignment') }}">
+                <i class="fas fa-fw fa-tasks"></i>
+                <span>{{ __('Assignment') }}</span>
+            </a>
+        </li>
+
+        <!-- Nav Item -->
+        <li class="nav-item {{ Nav::isRoute('materi') }}">
+            <a class="nav-link" href="{{ route('materi') }}">
+                <i class="fas fa-fw fa-book-reader"></i>
+                <span>{{ __('Materi') }}</span>
+            </a>
+        </li>
+
+        <!-- Nav Item -->
+        <li class="nav-item {{ Nav::isRoute('video-mentoring') }}">
+            <a class="nav-link" href="{{ route('video-mentoring') }}">
+                <i class="fas fa-fw fa-video"></i>
+                <span>{{ __('Video Mentoring') }}</span>
+            </a>
+        </li>
+
+        <!-- Nav Item -->
+        <li class="nav-item {{ Nav::isRoute('forum') }}">
+            <a class="nav-link" href="{{ route('forum') }}">
+                <i class="fas fa-fw fa-question-circle"></i>
+                <span>{{ __('Forum') }}</span>
+            </a>
+        </li>
+
         <!-- Divider -->
         <hr class="sidebar-divider">
 
@@ -57,35 +100,11 @@
             {{ __('Settings') }}
         </div>
 
-        <!-- Nav Item - Profile -->
-        <li class="nav-item {{ Nav::isRoute('profile') }}">
-            <a class="nav-link" href="{{ route('profile') }}">
-                <i class="fas fa-fw fa-user"></i>
-                <span>{{ __('Profile') }}</span>
-            </a>
-        </li>
-
         <!-- Nav Item - About -->
         <li class="nav-item {{ Nav::isRoute('about') }}">
             <a class="nav-link" href="{{ route('about') }}">
                 <i class="fas fa-fw fa-hands-helping"></i>
                 <span>{{ __('About') }}</span>
-            </a>
-        </li>
-
-        <!-- Nav Item -->
-        <li class="nav-item {{ Nav::isRoute('grocery') }}">
-            <a class="nav-link" href="{{ route('grocery') }}">
-                <i class="fas fa-fw fa-book"></i>
-                <span>{{ __('Grocery CRUD') }}</span>
-            </a>
-        </li>
-
-        <!-- Nav Item -->
-        <li class="nav-item {{ Nav::isRoute('blank') }}">
-            <a class="nav-link" href="{{ route('blank') }}">
-                <i class="fas fa-fw fa-book"></i>
-                <span>{{ __('Blank Page') }}</span>
             </a>
         </li>
 
@@ -347,6 +366,8 @@
 <script src="{{ asset('vendor/bootstrap/js/bootstrap.min.js') }}"></script>
 <script src="{{ asset('vendor/jquery-easing/jquery.easing.min.js') }}"></script>
 <script src="{{ asset('js/sb-admin-2.min.js') }}"></script>
+<script src="{{ asset('js/dropzone.js') }}"></script>
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 @stack('js')
 </body>
 </html>
