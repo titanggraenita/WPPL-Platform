@@ -2,6 +2,13 @@
 
 @section('main-content')
     <!-- Page Heading -->
+    <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/home">Home</a></li>
+        <li class="breadcrumb-item"><a href="/deliverable">Deliverable</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Upload Deliverable</li>
+    </ol>
+    </nav>
     <h1 class="h3 mb-4 text-gray-800">{{ __('Upload Deliverable') }}</h1>
 
     <!-- Main Content goes here -->

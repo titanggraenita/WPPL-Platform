@@ -2,6 +2,14 @@
 
 @section('main-content')
     <!-- Page Heading -->
+    <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/home">Home</a></li>
+        <li class="breadcrumb-item"><a href="/forum">Forum</a></li>
+        <li class="breadcrumb-item"><a href="/list-forum">List Forum</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Ask Forum</li>
+    </ol>
+    </nav>
     <h1 class="h3 mb-4 text-gray-800">{{ __('Ask Forum') }}</h1>
 
     <!-- Main Content goes here -->
@@ -16,7 +24,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="form-group focused">
-                        <label for="modul">Modul</label>
+                    <label class="form-control-label" for="title">Modul</label>
                         <select id="modul" class="form-control">
                             <option selected>Select Modul...</option>
                             <option value="1">Backend</option>

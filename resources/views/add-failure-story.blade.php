@@ -2,6 +2,13 @@
 
 @section('main-content')
     <!-- Page Heading -->
+    <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/home">Home</a></li>
+        <li class="breadcrumb-item"><a href="/failure-story">Failure Story</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Add Failure Story</li>
+    </ol>
+    </nav>
     <h1 class="h3 mb-4 text-gray-800">{{ __('Add Failure Story') }}</h1>
 
     <!-- Main Content goes here -->
@@ -16,14 +23,15 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="form-group focused">
-                        <label for="modul">Modul</label>
+                        <label class="form-control-label" for="title">Modul</label>
                         <select id="modul" class="form-control">
                             <option selected>Select Modul...</option>
-                            <option value="1">Backend</option>
-                            <option value="2">Frontend</option>
-                            <option value="3">Mobile</option>
-                            <option value="4">Desktop</option>
-                            <option value="5">Deployment</option>
+                            <option value="1">UI/UX</option>
+                            <option value="2">Backend</option>
+                            <option value="3">Frontend</option>
+                            <option value="4">Mobile</option>
+                            <option value="5">Desktop</option>
+                            <option value="6">Deployment</option>
                         </select>
                     </div>
                 </div>

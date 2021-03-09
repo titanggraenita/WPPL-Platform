@@ -2,7 +2,13 @@
 
 @section('main-content')
     <!-- Page Heading -->
-    <h1 class="h3 mb-4 text-gray-800">{{ __('Deliverable') }}</h1>
+    <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/home">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Deliverable</li>
+    </ol>
+    </nav>
+    <h1 class="h3 mb-4 text-gray-800">{{ __('List Deliverable') }}</h1>
 
     <!-- Main Content goes here -->
     <div class="card shadow mb-4">

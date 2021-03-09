@@ -2,6 +2,12 @@
 
 @section('main-content')
     <!-- Page Heading -->
+    <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/home">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Profile</li>
+    </ol>
+    </nav>
     <h1 class="h3 mb-4 text-gray-800">{{ __('Profile') }}</h1>
 
     @if ($errors->any())

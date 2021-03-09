@@ -5,12 +5,11 @@
     <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="/home">Home</a></li>
-        <li class="breadcrumb-item"><a href="/materi">Materi</a></li>
-        <li class="breadcrumb-item"><a href="/list-materi">List Materi</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Upload Materi</li>
+        <li class="breadcrumb-item"><a href="/failure-story">Failure Story</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Detail Failure Story</li>
     </ol>
     </nav>
-    <h1 class="h3 mb-4 text-gray-800">{{ __('Upload Materi') }}</h1>
+    <h1 class="h3 mb-4 text-gray-800">{{ __('Detail Failure Story') }}</h1>
 
     <!-- Main Content goes here -->
     <div class="card shadow mb-4">
@@ -18,47 +17,38 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="form-group focused">
-                        <label class="form-control-label" for="file_name">File Name</label>
-                        <input type="text" id="file_name" class="form-control" name="file_name">
+                        <label class="form-control-label" for="title" >Problem</label>
+                        <input type="text" id="problem" class="form-control" name="problem" readonly>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="form-group focused">
-                        <label for="modul">Modul</label>
+                        <label class="form-control-label" for="title">Modul</label>
                         <select id="modul" class="form-control">
                             <option selected>Select Modul...</option>
-                            <option value="1">Backend</option>
-                            <option value="2">Frontend</option>
-                            <option value="3">Mobile</option>
-                            <option value="4">Desktop</option>
-                            <option value="5">Deployment</option>
+                            <option value="1">UI/UX</option>
+                            <option value="2">Backend</option>
+                            <option value="3">Frontend</option>
+                            <option value="4">Mobile</option>
+                            <option value="5">Desktop</option>
+                            <option value="6">Deployment</option>
                         </select>
                     </div>
                 </div>
-            </div>
+            </div>    
             <div class="row">
                 <div class="col-lg-12">
                     <div class="form-group focused">
                         <label class="form-control-label" for="description">Description</label>
-                        <textarea id="description" class="form-control" name="description" placeholder="Write a detailed description..."></textarea>
-                        <p class="text-form">You will be able to edit this information later.</p>
+                        <textarea id="description" class="form-control" name="description" readonly></textarea>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="form-group focused">
-                        <label class="form-control-label" for="attachement">Attachment</label>
-                        <form action="{{ route('dropzone') }}" class="dropzone" method="post" enctype="multipart/form-data">@csrf
-                        </form>
-                        <p class="text-form">(* File type : .docx, .pptx, .xlsx, .pdf)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary">Upload</button>
+                        <label class="form-control-label" for="solution">Solution</label>
+                        <textarea id="solution" class="form-control" name="solution" readonly></textarea>
                     </div>
                 </div>
             </div>

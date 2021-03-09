@@ -13,3 +13,11 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
    .sass('resources/sass/app.scss', 'public/css');
+
+   mix.scripts([
+      'node_modules/chart.js/dist/Chart.js',
+  ],  'public/js/app.js')
+
+  .styles([
+      'resources/assets/css/app.css'
+  ],  'public/css/app.css');

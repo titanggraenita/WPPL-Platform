@@ -2,6 +2,12 @@
 
 @section('main-content')
     <!-- Page Heading -->
+    <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/home">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Create Task</li>
+    </ol>
+    </nav>
     <h1 class="h3 mb-4 text-gray-800">{{ __('Create Task') }}</h1>
 
     <!-- Main Content goes here -->
@@ -29,6 +35,16 @@
                         <label class="form-control-label" for="due_date">Due Date</label>
                         <div class="form-item"></div>
                         <input class="input-sm form-control" id="start-date" type="text" name="start" data-date-format="DD, MM d"/><span class="date-text date-depart"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-group focused">
+                        <label class="form-control-label" for="attachement">Attachment</label>
+                        <form action="{{ route('dropzone') }}" class="dropzone" method="post" enctype="multipart/form-data">@csrf
+                        </form>
+                        <p class="text-form">(* File type : .docx, .pptx, .xlsx, .pdf)</p>
                     </div>
                 </div>
             </div>

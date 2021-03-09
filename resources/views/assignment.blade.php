@@ -2,6 +2,12 @@
 
 @section('main-content')
     <!-- Page Heading -->
+    <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/home">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Assignment</li>
+    </ol>
+    </nav>
     <h1 class="h3 mb-4 text-gray-800">{{ __('List Assignment') }}</h1>
 
     <!-- Main Content goes here -->
@@ -29,7 +35,7 @@
                                 <a href="/upload-assignment" class="btn btn-primary">Upload File</a>
                             </div>
                             <div class="col-lg-4">
-                                <a href="#" class="btn btn-primary">View</a>
+                                <a href="/detail-assignment" class="btn btn-primary">View</a>
                             </div>
                         </div>
                     </div>
@@ -54,7 +60,7 @@
                                 <a href="/upload-assignment" class="btn btn-primary">Upload File</a>
                             </div>
                             <div class="col-lg-4">
-                                <a href="#" class="btn btn-primary">View</a>
+                                <a href="detail-assignment" class="btn btn-primary">View</a>
                             </div>
                         </div>
                     </div>
@@ -79,7 +85,7 @@
                                 <a href="/upload-assignment" class="btn btn-primary">Upload File</a>
                             </div>
                             <div class="col-lg-4">
-                                <a href="#" class="btn btn-primary">View</a>
+                                <a href="detail-assignment" class="btn btn-primary">View</a>
                             </div>
                         </div>
                     </div>
@@ -108,7 +114,7 @@
                                 <a href="/upload-assignment" class="btn btn-primary">Upload File</a>
                             </div>
                             <div class="col-lg-4">
-                                <a href="#" class="btn btn-primary">View</a>
+                                <a href="detail-assignment" class="btn btn-primary">View</a>
                             </div>
                         </div>
                     </div>
@@ -133,7 +139,7 @@
                                 <a href="/upload-assignment" class="btn btn-primary">Upload File</a>
                             </div>
                             <div class="col-lg-4">
-                                <a href="#" class="btn btn-primary">View</a>
+                                <a href="detail-assignment" class="btn btn-primary">View</a>
                             </div>
                         </div>
                     </div>
@@ -158,7 +164,7 @@
                                 <a href="/upload-assignment" class="btn btn-primary">Upload File</a>
                             </div>
                             <div class="col-lg-4">
-                                <a href="#" class="btn btn-primary">View</a>
+                                <a href="detail-assignment" class="btn btn-primary">View</a>
                             </div>
                         </div>
                     </div>
